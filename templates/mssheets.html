@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spreadsheets</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 4: Spreadsheets</h2>
+<p>Days 26–35 · Learn to organize data and perform calculations using Microsoft Excel or LibreOffice Calc.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will be able to enter and organize data,
+use formulas and functions, format cells, and build charts from spreadsheet data.
+</div>
+
+<details open>
+<summary>1. Introduction to Microsoft Excel/LibreOffice Calc</summary>
+<p>Spreadsheet software is used to store, organize, and calculate data using a grid of rows and columns.</p>
+<ul>
+<li>Workbook - the entire file</li>
+<li>Worksheet - a single sheet/tab within the workbook</li>
+<li>Cell - the intersection of a row and column</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Rows, Columns, Cells, and Data Entry</summary>
+<ul>
+<li>Rows are numbered (1, 2, 3...) and columns are lettered (A, B, C...)</li>
+<li>Each cell has an address, e.g. B4</li>
+<li>Data can be text, numbers, or dates</li>
+<li>Use Tab and Enter to move between cells while entering data</li>
+</ul>
+</details>
+
+<details>
+<summary>3. Basic Formulas and Calculations</summary>
+<p>Formulas always begin with an equals sign (=) and can perform arithmetic on cell values.</p>
+<table>
+<tr><th>Formula</th><th>Result</th></tr>
+<tr><td>=A1+A2</td><td>Adds the values in A1 and A2</td></tr>
+<tr><td>=A1-A2</td><td>Subtracts A2 from A1</td></tr>
+<tr><td>=A1*A2</td><td>Multiplies A1 and A2</td></tr>
+<tr><td>=A1/A2</td><td>Divides A1 by A2</td></tr>
+</table>
+</details>
+
+<details>
+<summary>4. Functions (SUM, AVERAGE, MAX, MIN)</summary>
+<table>
+<tr><th>Function</th><th>Purpose</th></tr>
+<tr><td>=SUM(A1:A10)</td><td>Adds all values in the range</td></tr>
+<tr><td>=AVERAGE(A1:A10)</td><td>Finds the mean value</td></tr>
+<tr><td>=MAX(A1:A10)</td><td>Finds the highest value</td></tr>
+<tr><td>=MIN(A1:A10)</td><td>Finds the lowest value</td></tr>
+</table>
+</details>
+
+<details>
+<summary>5. Cell Formatting and Data Organization</summary>
+<ul>
+<li>Number formats - currency, percentage, date</li>
+<li>Bold, color, and borders for emphasis</li>
+<li>Column width and row height adjustments</li>
+<li>Freezing panes to keep headers visible</li>
+</ul>
+</details>
+
+<details>
+<summary>6. Charts, Sorting, and Filtering</summary>
+<ul>
+<li>Insert charts (bar, line, pie) to visualize data</li>
+<li>Sort data alphabetically or numerically, ascending or descending</li>
+<li>Filter data to show only rows matching certain criteria</li>
+</ul>
+</details>
+
+<details>
+<summary>7. Practical Spreadsheet Project and Quiz</summary>
+<ol>
+<li>Create a spreadsheet tracking weekly expenses across five categories.</li>
+<li>Use SUM to calculate the total for each category and overall total.</li>
+<li>Use AVERAGE to find the average daily expense.</li>
+<li>Create a pie chart showing the expense breakdown.</li>
+<li>Sort the data by highest to lowest expense.</li>
+</ol>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What symbol must every formula begin with?</li>
+<li>What does the AVERAGE function calculate?</li>
+<li>Name one chart type used to visualize data.</li>
+<li>What is the difference between sorting and filtering?</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

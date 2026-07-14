@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Creation</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 6: Website Creation</h2>
+<p>Days 41–45 · Learn the basics of web design and build a website using the Wix platform.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will understand core web design principles
+and be able to build, customize, and publish a simple website using Wix.
+</div>
+
+<details open>
+<summary>1. Introduction to Websites and Web Design</summary>
+<p>A website is a collection of linked pages accessed through a browser, made up of text, images, and interactive elements.</p>
+<ul>
+<li>Homepage - the main landing page of a site</li>
+<li>Navigation - menus that let visitors move between pages</li>
+<li>Layout - how content is arranged on the page</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Exploring the Wix Platform</summary>
+<p>Wix is a drag-and-drop website builder that lets you design a site without writing code.</p>
+<ul>
+<li>Templates - pre-designed starting points for a site</li>
+<li>Editor - the drag-and-drop workspace</li>
+<li>Elements Panel - add text, images, buttons, and more</li>
+</ul>
+</details>
+
+<details>
+<summary>3. Creating and Customizing a Website</summary>
+<ul>
+<li>Choose a template that fits the site's purpose</li>
+<li>Customize colors, fonts, and layout to match a theme</li>
+<li>Add or remove pages as needed</li>
+<li>Preview the site on desktop and mobile views</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Adding Text, Images, Buttons, and Links</summary>
+<table>
+<tr><th>Element</th><th>Purpose</th></tr>
+<tr><td>Text Box</td><td>Displays headings and paragraphs</td></tr>
+<tr><td>Image</td><td>Displays photos or graphics</td></tr>
+<tr><td>Button</td><td>Triggers an action, like navigating to a page</td></tr>
+<tr><td>Link</td><td>Connects to another page or website</td></tr>
+</table>
+</details>
+
+<details>
+<summary>5. Website Design Principles and Publishing</summary>
+<ul>
+<li>Keep layouts clean and uncluttered</li>
+<li>Use consistent colors and fonts throughout the site</li>
+<li>Ensure text is readable and images are relevant</li>
+<li>Publish the site to make it live on the web</li>
+</ul>
+</details>
+
+<details>
+<summary>6. Final Website Presentation</summary>
+<ol>
+<li>Choose a topic for a personal or hobby website.</li>
+<li>Build at least three pages: Home, About, and Contact.</li>
+<li>Add text, at least two images, and one button or link.</li>
+<li>Publish the site and share the link with the class.</li>
+<li>Present the site and explain design choices.</li>
+</ol>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What does the term "navigation" refer to on a website?</li>
+<li>What is Wix used for?</li>
+<li>Name two design principles for a clean website.</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

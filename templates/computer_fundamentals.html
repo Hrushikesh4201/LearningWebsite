@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Fundamentals</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Computer Fundamentals</h2>
+<p>Learn the fundamentals of computers from the ground up.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this lesson you will understand what a computer is,
+its history, components, operating principles, applications, advantages and limitations.
+</div>
+
+<details open>
+<summary>1. Definition of a Computer</summary>
+<p>A computer is an electronic device that accepts data (input), processes it according to a set of instructions, stores it, and produces meaningful information (output).</p>
+<ul>
+<li>Input</li>
+<li>Processing</li>
+<li>Storage</li>
+<li>Output</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Origin & History</summary>
+<p>The word <b>computer</b> originally referred to a person who performed calculations manually.</p>
+<p>Modern electronic computers evolved during the 1940s.</p>
+<table>
+<tr><th>Generation</th><th>Technology</th><th>Years</th></tr>
+<tr><td>First</td><td>Vacuum Tubes</td><td>1940-1956</td></tr>
+<tr><td>Second</td><td>Transistors</td><td>1956-1963</td></tr>
+<tr><td>Third</td><td>Integrated Circuits</td><td>1964-1971</td></tr>
+<tr><td>Fourth</td><td>Microprocessors</td><td>1971-Present</td></tr>
+<tr><td>Fifth</td><td>Artificial Intelligence</td><td>Present & Future</td></tr>
+</table>
+</details>
+
+<details>
+<summary>3. Characteristics</summary>
+<ul>
+<li>High Speed</li>
+<li>Accuracy</li>
+<li>Large Storage</li>
+<li>Automation</li>
+<li>Reliability</li>
+<li>Versatility</li>
+<li>Diligence (doesn't get tired)</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Basic Components</summary>
+<h4>Input Unit</h4>
+<p>Accepts data using keyboard, mouse, scanner, microphone, webcam etc.</p>
+<h4>CPU (Central Processing Unit)</h4>
+<p>The brain of the computer.</p>
+<ul>
+<li>ALU - Arithmetic & Logical calculations</li>
+<li>Control Unit - Controls all operations</li>
+<li>Registers - High-speed temporary storage</li>
+</ul>
+<h4>Memory</h4>
+<ul>
+<li>RAM - Temporary memory</li>
+<li>ROM - Permanent memory</li>
+<li>Cache - Very fast memory</li>
+</ul>
+<h4>Output Unit</h4>
+<p>Monitor, Printer, Speakers and Projector display results.</p>
+</details>
+
+<details>
+<summary>5. Hardware</summary>
+<p>Hardware refers to the physical components that can be touched.</p>
+<b>Examples</b>
+<ul>
+<li>Keyboard</li><li>Mouse</li><li>Monitor</li><li>CPU Cabinet</li><li>Printer</li>
+</ul>
+<b>Advantages</b>
+<ul><li>Upgradeable</li><li>Replaceable</li><li>Durable</li></ul>
+<b>Disadvantages</b>
+<ul><li>Physical damage</li><li>Needs maintenance</li></ul>
+</details>
+
+<details>
+<summary>6. Software</summary>
+<p>Software is a collection of programs that tells the hardware what to do.</p>
+<ul>
+<li>System Software (Windows, Linux)</li>
+<li>Application Software (MS Word, Chrome, VLC)</li>
+</ul>
+</details>
+
+<details>
+<summary>7. Applications</summary>
+<ul>
+<li>Education</li>
+<li>Banking</li>
+<li>Healthcare</li>
+<li>Engineering</li>
+<li>Business</li>
+<li>Entertainment</li>
+<li>Government</li>
+<li>Artificial Intelligence</li>
+</ul>
+</details>
+
+<details>
+<summary>8. Advantages & Disadvantages</summary>
+<h4>Advantages</h4>
+<ul>
+<li>Very Fast</li>
+<li>Highly Accurate</li>
+<li>Large Storage</li>
+<li>Automation</li>
+<li>Multitasking</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>Cyber Security Risks</li>
+<li>Electricity Dependency</li>
+<li>Health Issues due to prolonged use</li>
+<li>No intelligence of its own</li>
+</ul>
+</details>
+
+<details>
+<summary>9. How to Operate a Computer</summary>
+<ol>
+<li>Switch on power.</li>
+<li>Start the computer.</li>
+<li>Login.</li>
+<li>Open applications.</li>
+<li>Save work regularly.</li>
+<li>Shut down properly.</li>
+</ol>
+</details>
+
+<details>
+<summary>10. Quick Quiz</summary>
+<ol>
+<li>What is CPU?</li>
+<li>Difference between RAM and ROM?</li>
+<li>Name two input devices.</li>
+<li>Name two output devices.</li>
+<li>What is software?</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

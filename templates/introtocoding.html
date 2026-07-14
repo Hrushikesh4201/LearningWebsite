@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Coding</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 7: Introduction to Coding</h2>
+<p>Days 46–50 · Learn computational thinking and write your first simple programs.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will understand what algorithms are,
+think through problems step by step, and build a simple program using Scratch or Python.
+</div>
+
+<details open>
+<summary>1. Introduction to Coding and Computational Thinking</summary>
+<p>Coding is the process of writing instructions that a computer can follow. Computational thinking is a way of breaking problems into clear, logical steps.</p>
+<ul>
+<li>Decomposition - breaking a big problem into smaller parts</li>
+<li>Pattern Recognition - spotting similarities between problems</li>
+<li>Abstraction - focusing on important details, ignoring the rest</li>
+<li>Algorithm Design - creating step-by-step solutions</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Algorithms and Flowcharts</summary>
+<p>An algorithm is a sequence of steps used to solve a problem or complete a task. Flowcharts use symbols to represent these steps visually.</p>
+<table>
+<tr><th>Symbol</th><th>Meaning</th></tr>
+<tr><td>Oval</td><td>Start / End</td></tr>
+<tr><td>Rectangle</td><td>Process / Action</td></tr>
+<tr><td>Diamond</td><td>Decision (Yes/No)</td></tr>
+<tr><td>Arrow</td><td>Flow direction</td></tr>
+</table>
+</details>
+
+<details>
+<summary>3. Scratch or Python Basics</summary>
+<p><b>Scratch</b> uses drag-and-drop visual blocks to build programs, ideal for beginners.</p>
+<p><b>Python</b> uses text-based code and is a popular beginner-friendly programming language.</p>
+<ul>
+<li>Variables - store data like numbers or text</li>
+<li>Loops - repeat actions multiple times</li>
+<li>Conditionals (if/else) - make decisions in code</li>
+<li>Events - trigger actions (e.g. "when key pressed")</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Creating Simple Programs and Animations</summary>
+<ul>
+<li>Move a character across the screen using loops</li>
+<li>Make a sprite respond to key presses or clicks</li>
+<li>Use conditionals to create simple games, like a quiz or catch-the-object game</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Mini Coding Project</summary>
+<ol>
+<li>Plan a simple program idea (e.g. a story, a quiz, or a simple game).</li>
+<li>Sketch a basic flowchart of the program's logic.</li>
+<li>Build the program in Scratch or Python.</li>
+<li>Test the program and fix any errors (debugging).</li>
+</ol>
+</details>
+
+<details>
+<summary>6. Final Project Showcase and Course Review</summary>
+<ul>
+<li>Present the mini coding project to the class</li>
+<li>Explain the logic and choices made while building it</li>
+<li>Reflect on skills learned across all units of the course</li>
+</ul>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What is an algorithm?</li>
+<li>What flowchart symbol represents a decision?</li>
+<li>Name one difference between Scratch and Python.</li>
+<li>What is debugging?</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>

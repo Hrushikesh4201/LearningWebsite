@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Learning Portal</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/contact">Contact</a>
+    </nav>
+<button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+
+    <h2>Courses We Offer</h2>
+
+    <p>
+        Choose any course below to explore the syllabus and begin your learning journey.
+    </p>
+
+</section>
+
+<section class="info">
+
+    <div class="card">
+
+        <h3>
+            <a href="/computer_fundamentals">
+                💻 Computer Fundamentals
+            </a>
+        </h3>
+
+        <p>
+            Learn computers from scratch, understand hardware, software,
+            operating systems and everyday computer usage.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>
+            <a href="/OSandFM">
+                🌐 Operating System & File Management
+            </a>
+        </h3>
+
+        <p>
+            Internet usage, email communication, cyber safety,
+            passwords and digital awareness.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>
+            <a href="/websitecreation">
+                🔎 Website Creation
+            </a>
+        </h3>
+
+        <p>
+            Learn searching, downloading, bookmarks and safe browsing.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>
+            <a href="/intro_to_coding">
+                ⌨️ Introduction to Coding
+            </a>
+        </h3>
+
+        <p>
+            Learn some basic Coding skills and fundamentals required.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📊 Microsoft Office</h3>
+
+        <ul>
+            <li><a href="/msword">Microsoft Word</a></li>
+            <li><a href="/mspowerpoint">Microsoft PowerPoint</a></li>
+            <li><a href="/mssheets">Microsoft Excel</a></li>
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Learning Portal | Learn Today. Lead Tomorrow.
+    </p>
+
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operating Systems & File Management</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 2: Operating Systems & File Management</h2>
+<p>Days 11–15 · Learn how operating systems work and how to manage files and folders confidently.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will understand what an operating system does,
+navigate a desktop environment, and confidently create, organize, and manage files and folders.
+</div>
+
+<details open>
+<summary>1. Introduction to Operating Systems</summary>
+<p>An operating system (OS) is the main software that manages a computer's hardware and software resources, acting as a bridge between the user and the machine.</p>
+<ul>
+<li>Manages memory, storage, and processing tasks</li>
+<li>Runs applications and provides a user interface</li>
+<li>Handles input and output devices</li>
+</ul>
+<table>
+<tr><th>OS</th><th>Type</th><th>Common Use</th></tr>
+<tr><td>Windows</td><td>Desktop OS</td><td>Home & office computers</td></tr>
+<tr><td>macOS</td><td>Desktop OS</td><td>Apple computers</td></tr>
+<tr><td>Linux</td><td>Desktop/Server OS</td><td>Servers, developers</td></tr>
+<tr><td>Android/iOS</td><td>Mobile OS</td><td>Smartphones & tablets</td></tr>
+</table>
+</details>
+
+<details>
+<summary>2. Desktop, Taskbar, Icons, and Start Menu</summary>
+<p>The desktop is the main screen you see after logging in. It contains icons, a background, and a taskbar for quick access to programs.</p>
+<ul>
+<li><b>Desktop</b> - the main workspace with icons and shortcuts</li>
+<li><b>Taskbar</b> - shows open apps and the system clock</li>
+<li><b>Icons</b> - small pictures representing files, folders, or programs</li>
+<li><b>Start Menu</b> - central place to open programs and settings</li>
+</ul>
+</details>
+
+<details>
+<summary>3. Files, Folders, and File Extensions</summary>
+<p>A file stores data, and a folder (or directory) is used to organize files.</p>
+<table>
+<tr><th>Extension</th><th>File Type</th></tr>
+<tr><td>.docx</td><td>Word Document</td></tr>
+<tr><td>.xlsx</td><td>Excel Spreadsheet</td></tr>
+<tr><td>.pptx</td><td>PowerPoint Presentation</td></tr>
+<tr><td>.pdf</td><td>PDF Document</td></tr>
+<tr><td>.jpg / .png</td><td>Image File</td></tr>
+<tr><td>.mp4</td><td>Video File</td></tr>
+</table>
+</details>
+
+<details>
+<summary>4. Creating, Saving, and Organizing Files</summary>
+<ul>
+<li>Right-click on the desktop or in a folder to create a new file or folder</li>
+<li>Use "Save As" to choose a file name, type, and location</li>
+<li>Group related files into clearly named folders</li>
+<li>Use logical naming conventions, e.g. "Project_Report_v1.docx"</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Copying, Moving, Renaming, and Deleting Files</summary>
+<ul>
+<li><b>Copy</b> - Ctrl+C, then Ctrl+V to paste a duplicate</li>
+<li><b>Move</b> - Ctrl+X (cut), then Ctrl+V in the new location, or drag-and-drop</li>
+<li><b>Rename</b> - right-click → Rename, or press F2</li>
+<li><b>Delete</b> - select the file and press Delete (moves to Recycle Bin/Trash)</li>
+</ul>
+</details>
+
+<details>
+<summary>6. Practical File Management Activities</summary>
+<ol>
+<li>Create a folder called "My Projects" on the desktop.</li>
+<li>Inside it, create three sub-folders: Documents, Images, and Notes.</li>
+<li>Create a text file and save it inside Documents.</li>
+<li>Copy that file into Notes and rename the copy.</li>
+<li>Delete the original file and confirm it moved to the Recycle Bin.</li>
+</ol>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What is the main job of an operating system?</li>
+<li>What does a file extension tell you?</li>
+<li>How do you rename a file using the keyboard?</li>
+<li>Where do deleted files go before permanent deletion?</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

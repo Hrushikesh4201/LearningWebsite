@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Portal</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Learning Portal</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+    </header>
+
+    <section class="hero">
+
+        <h2>Welcome to the Advanced Learning Portal</h2>
+
+        <p>
+            Build the skills of tomorrow with structured, industry-focused learning.
+            Whether you're just starting your journey or enhancing your existing knowledge,
+            our courses are designed to help you grow with confidence.
+        </p>
+
+        <p>
+            Explore our collection of programming and technology courses, gain practical
+            knowledge, and prepare yourself for future opportunities.
+        </p>
+
+        <a href="/courses" class="button">
+            Explore Courses
+        </a>
+
+    </section>
+
+    <section class="info">
+
+        <div class="card">
+            <h3>Industry-Oriented Learning</h3>
+            <p>
+                Learn concepts that are useful in real-world software development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Beginner Friendly</h3>
+            <p>
+                Our courses are structured for students with little or no prior experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Hands-on Practice</h3>
+            <p>
+                Learn by building projects and applying your knowledge step by step.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Learning Portal | Learn Today. Lead Tomorrow.
+        </p>
+
+    </footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

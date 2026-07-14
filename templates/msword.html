@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Processing</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 3: Word Processing</h2>
+<p>Days 16–25 · Learn to create clean, professional documents using Microsoft Word or LibreOffice Writer.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will be able to type efficiently, format
+text and paragraphs, insert images and tables, and produce a professional document from start to finish.
+</div>
+
+<details open>
+<summary>1. Introduction to Microsoft Word/LibreOffice Writer</summary>
+<p>Word processors are applications used to create, edit, and format text documents such as letters, reports, and resumes.</p>
+<ul>
+<li>Ribbon/Toolbar - contains formatting commands</li>
+<li>Document Area - where you type your content</li>
+<li>Rulers & Margins - control page layout</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Typing Skills and Keyboard Shortcuts</summary>
+<p>Good typing habits improve speed and accuracy. Keyboard shortcuts save time on repeated actions.</p>
+<table>
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>Ctrl+B</td><td>Bold</td></tr>
+<tr><td>Ctrl+I</td><td>Italic</td></tr>
+<tr><td>Ctrl+U</td><td>Underline</td></tr>
+<tr><td>Ctrl+Z</td><td>Undo</td></tr>
+<tr><td>Ctrl+S</td><td>Save</td></tr>
+<tr><td>Ctrl+P</td><td>Print</td></tr>
+</table>
+</details>
+
+<details>
+<summary>3. Text and Paragraph Formatting</summary>
+<ul>
+<li>Font style, size, and color</li>
+<li>Text alignment - left, center, right, justify</li>
+<li>Line spacing and paragraph spacing</li>
+<li>Indentation for structured writing</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Bullets, Numbering, and Page Layout</summary>
+<ul>
+<li>Bulleted lists for unordered points</li>
+<li>Numbered lists for sequential steps</li>
+<li>Page size, orientation, and margins</li>
+<li>Headers, footers, and page numbers</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Inserting Images, Shapes, and Tables</summary>
+<ul>
+<li>Insert → Pictures to add images from a device</li>
+<li>Insert → Shapes for arrows, boxes, and callouts</li>
+<li>Insert → Table to organize information in rows and columns</li>
+<li>Wrap text around images for a polished layout</li>
+</ul>
+</details>
+
+<details>
+<summary>6. Creating Professional Documents</summary>
+<p>Professional documents combine formatting, structure, and clarity.</p>
+<ul>
+<li>Consistent fonts and heading styles</li>
+<li>Clear title and section headings</li>
+<li>Proper spacing and alignment</li>
+<li>Proofreading before finalizing</li>
+</ul>
+</details>
+
+<details>
+<summary>7. Practical Document Project and Assessment</summary>
+<ol>
+<li>Create a one-page resume or event flyer.</li>
+<li>Include a title, at least one image, and a bulleted list.</li>
+<li>Add a table summarizing key information.</li>
+<li>Format headings, spacing, and alignment consistently.</li>
+<li>Save and submit the final document for review.</li>
+</ol>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What shortcut is used to bold text?</li>
+<li>What is the difference between a bulleted list and a numbered list?</li>
+<li>Where would you go to insert a table?</li>
+<li>Name two elements of a professional document.</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentations</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header>
+<h1>Learning Portal</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/courses">Courses</a>
+<a href="/contact">Contact</a>
+</nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+<h2>Unit 5: Presentations</h2>
+<p>Days 36–40 · Learn to design and deliver engaging presentations using PowerPoint or Impress.</p>
+</section>
+
+<div class="content">
+
+<div class="note">
+<strong>Learning Objective:</strong> By the end of this unit you will be able to build a slide deck with
+text, images, and animations, and deliver it confidently as part of a group presentation.
+</div>
+
+<details open>
+<summary>1. Introduction to Microsoft PowerPoint/LibreOffice Impress</summary>
+<p>Presentation software is used to create slide decks that combine text, images, and multimedia to support a spoken talk.</p>
+<ul>
+<li>Slide - a single screen in the presentation</li>
+<li>Slide Layout - a template for arranging content on a slide</li>
+<li>Slide Show mode - full-screen presentation view</li>
+</ul>
+</details>
+
+<details>
+<summary>2. Creating and Organizing Slides</summary>
+<ul>
+<li>Add new slides using the "New Slide" button</li>
+<li>Choose layouts for title slides, content slides, and image slides</li>
+<li>Reorder slides using the slide panel or drag-and-drop</li>
+<li>Group related slides into clear sections</li>
+</ul>
+</details>
+
+<details>
+<summary>3. Adding Text, Images, and Graphics</summary>
+<ul>
+<li>Click into text placeholders to add titles and bullet points</li>
+<li>Insert → Pictures to add images</li>
+<li>Insert → Shapes/Icons for visual emphasis</li>
+<li>Keep text concise - slides support the speaker, not replace them</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Animations and Transitions</summary>
+<table>
+<tr><th>Feature</th><th>Purpose</th></tr>
+<tr><td>Animation</td><td>Controls how elements appear on a single slide</td></tr>
+<tr><td>Transition</td><td>Controls how one slide changes to the next</td></tr>
+</table>
+<p>Use animations and transitions sparingly to avoid distracting the audience.</p>
+</details>
+
+<details>
+<summary>5. Presentation Skills and Group Presentation Project</summary>
+<ul>
+<li>Maintain eye contact and speak clearly</li>
+<li>Practice timing so each slide gets appropriate attention</li>
+<li>Use the slide as a visual aid, not a script to read word-for-word</li>
+</ul>
+<ol>
+<li>In groups, choose a topic learned earlier in the course.</li>
+<li>Create a 5-7 slide deck with a title slide, content slides, and a summary slide.</li>
+<li>Add at least one image and one animation.</li>
+<li>Assign speaking parts and rehearse as a group.</li>
+<li>Present to the class and answer questions.</li>
+</ol>
+</details>
+
+<details>
+<summary>Quick Quiz</summary>
+<ol>
+<li>What is the difference between an animation and a transition?</li>
+<li>Why should slide text be kept concise?</li>
+<li>Name one way to reorder slides.</li>
+</ol>
+</details>
+
+<p style="text-align:center;margin-top:25px;">
+<a href="/courses" class="button">← Back to Courses</a>
+</p>
+
+</div>
+
+<footer><p>© 2026 Learning Portal | Learn Today. Lead Tomorrow.</p></footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

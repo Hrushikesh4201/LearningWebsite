@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Learning Portal</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <button onclick="toggleDarkMode()" id="darkBtn">
+    🌙 Dark Mode
+</button>
+</header>
+
+<section class="hero">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        We'd love to hear from you. Feel free to contact us using the details below.
+    </p>
+
+</section>
+
+<section class="info">
+
+    <div class="card">
+
+    <p><strong>Developer / Owner:</strong> John Max</p>
+
+    <p><strong>Contact:</strong> +1 1600 040 5333</p>
+
+    <p><strong>Email ID:</strong> JohnMax@gmail.com</p>
+
+    <p>
+        <strong>Address:</strong><br>
+        245 Innovation Avenue<br>
+        Suite 210<br>
+        San Francisco, CA 94105<br>
+        United States
+    </p>
+
+</div>
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Learning Portal | Learn Today. Lead Tomorrow.
+    </p>
+
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

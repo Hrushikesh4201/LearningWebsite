@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ course.replace('_', ' ').title() }} Quiz</title>
+
+    <!-- Option 1: Standard Flask static asset path -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Option 2: If style.css sits in the exact same directory alongside the HTML files -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body class="quiz-body">
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <h1 class="quiz-title">{{ course.replace('_', ' ').title() }} Quiz</h1>
+            <p class="quiz-subtitle">Answer all questions and submit your quiz to see your score.</p>
+        </header>
+
+        <form method="POST" 
+              action="{{ url_for('submit_quiz', course=course) }}" 
+              class="quiz-form">
+
+            {% for q in questions %}
+                <fieldset class="quiz-card">
+                    <legend class="question-title">
+                        <span class="question-number">{{ loop.index }}.</span> {{ q.question }}
+                    </legend>
+
+                    {% if q.unit %}
+                        <div class="unit-badge">Unit: {{ q.unit }}</div>
+                    {% endif %}
+
+                    <div class="options-container">
+                        {% for option in q.options %}
+                            <label class="option-label">
+                                <input
+                                    type="radio"
+                                    name="{{ q.id }}"
+                                    value="{{ loop.index0 }}"
+                                    required
+                                >
+                                <span class="option-text">{{ option }}</span>
+                            </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+            {% endfor %}
+            
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

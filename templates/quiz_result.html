@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<h1>Quiz Results</h1>
+
+<h2>Your Score: {{ score }} / {{ total }}</h2>
+
+<p>Percentage: {{ "%.1f"|format(percentage) }}%</p>
+
+{% if needs_practice %}
+    <h2>Let's improve your score!</h2>
+
+    <p>
+        You scored below 40%. Review the units you found difficult
+        using the recommended practice questions.
+    </p>
+
+    <a href="{{ url_for('show_practice', course=course) }}">
+        Start Recommended Practice
+    </a>
+{% else %}
+    <h2>Good work!</h2>
+    <p>You scored 40% or above. Keep learning and practising.</p>
+{% endif %}
+
+<hr>
+
+{% if passed %}
+    <div class="celebration">
+        <h2>🎉 Congratulations! 🎉</h2>
+        <p>Excellent work! You passed the quiz. Keep it up!</p>
+    </div>
+{% else %}
+    <div class="celebration">
+        <h2>Keep practising! 💪</h2>
+        <p>Don't give up. Review your mistakes and try again!</p>
+    </div>
+{% endif %}
+
+<h2>Your Quiz Analysis</h2>
+
+<div class="vertical-chart">
+
+    <div class="chart-column">
+        <div class="bar-value">{{ total }}</div>
+        <div class="vertical-bar total-bar"
+             style="height: 200px;">
+        </div>
+        <div class="bar-label">Total Questions</div>
+    </div>
+
+    <div class="chart-column">
+        <div class="bar-value">{{ score }}</div>
+        <div class="vertical-bar correct-bar"
+             style="height: {{ (score / total * 200) if total else 0 }}px;">
+        </div>
+        <div class="bar-label">Correct Answers</div>
+    </div>
+
+    <div class="chart-column">
+        <div class="bar-value">{{ total - score }}</div>
+        <div class="vertical-bar wrong-bar"
+             style="height: {{ ((total - score) / total * 200) if total else 0 }}px;">
+        </div>
+        <div class="bar-label">Wrong Answers</div>
+    </div>
+
+</div>
+
+<h2>Review Your Answers</h2>
+{% for result in results %}
+    <div class="review-card">
+        <p>
+            <strong>{{ loop.index }}. {{ result.question }}</strong>
+        </p>
+
+        {% if result.is_correct %}
+            <p class="answer-correct">✓ Correct answer!</p>
+        {% else %}
+            <p class="answer-wrong">✗ Incorrect answer</p>
+
+            <p>
+                <strong>Your answer:</strong>
+                {% if result.selected is not none %}
+                    {{ result.options[result.selected] }}
+                {% else %}
+                    Not answered
+                {% endif %}
+            </p>
+
+            <p>
+                <strong>Correct answer:</strong>
+                {{ result.options[result.correct_answer] }}
+            </p>
+        {% endif %}
+
+        {% if result.explanation %}
+            <p><strong>Explanation:</strong> {{ result.explanation }}</p>
+        {% endif %}
+    </div>
+{% endfor %}
+<a href="{{ url_for('show_quiz', course=course) }}">
+    Retake Quiz
+</a>
+
+{% if passed %}
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+    confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 }
+    });
+</script>
+{% endif %}

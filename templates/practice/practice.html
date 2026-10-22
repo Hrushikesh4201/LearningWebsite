@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Practice</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Recommended Practice</h1>
+
+        <p>
+            Course: {{ course.replace('_', ' ').title() }}
+        </p>
+
+        {% if practice_by_unit %}
+            {% for unit, questions in practice_by_unit.items() %}
+                <section class="practice-unit">
+                    <h2>{{ unit }}</h2>
+
+                    {% for q in questions %}
+                        <div class="quiz-question">
+                            <p>
+                                <strong>{{ loop.index }}. {{ q.question }}</strong>
+                            </p>
+
+                            <details>
+                                <summary>Show Answer</summary>
+                                <p><strong>Answer:</strong> {{ q.answer }}</p>
+                                <p>{{ q.explanation }}</p>
+                            </details>
+                        </div>
+                    {% endfor %}
+                </section>
+            {% endfor %}
+        {% else %}
+            <p>
+                Practice questions for these units haven't been added yet.
+            </p>
+        {% endif %}
+
+        <a href="{{ url_for('show_quiz', course=course) }}">
+            Try the Quiz Again
+        </a>
+    </main>
+
+</body>
+</html>

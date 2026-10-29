@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title> Quiz Result </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -105,10 +106,14 @@
         {% endif %}
     </div>
 {% endfor %}
-<a href="{{ url_for('show_quiz', course=course) }}">
+
+<a href="{{ url_for('show_quiz', course=course) }}"class="retake-button">
     Retake Quiz
 </a>
 
+<a href="{{ url_for('home') }}" class="home-button">
+    Back to Home
+</a>
 {% if passed %}
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script>

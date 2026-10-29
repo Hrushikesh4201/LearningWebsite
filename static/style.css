@@ -184,12 +184,18 @@ th,td{border:1px solid #999;padding:8px;text-align:left}
 
     float:right;
 
-}/* Vertical quiz analysis chart */
+}
+
+
 .vertical-chart {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
     gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 25px 15px;
     margin: 20px 0;
     min-height: 300px;
@@ -198,13 +204,13 @@ th,td{border:1px solid #999;padding:8px;text-align:left}
 
 .chart-column {
     display: flex;
+    flex: 0 1 100px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 100px;
+    min-width: 0;
     height: 260px;
 }
-
 .bar-value {
     font-size: 18px;
     font-weight: bold;
@@ -254,4 +260,39 @@ th,td{border:1px solid #999;padding:8px;text-align:left}
     .bar-label {
         font-size: 12px;
     }
+}
+
+
+
+/* Quiz Result Navigation Buttons */
+.retake-button,
+.home-button {
+    display: inline-block;
+    margin: 15px 10px 15px 0;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Retake Quiz Button */
+.retake-button {
+    background-color: #28a745;
+}
+
+.retake-button:hover {
+    background-color: #218838;
+}
+
+/* Back to Home Button */
+.home-button {
+    background-color: #007bff;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
 }
